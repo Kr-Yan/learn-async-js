@@ -3,7 +3,7 @@ const fetchPromise = fetch(
   );
   
   fetchPromise
-    .then((response) => response.json())
+    .then((response) => response.json()) /*asychrnous/ error function*/
     .then((products) => {
         products.forEach(product => {
             console.log(product.name);
